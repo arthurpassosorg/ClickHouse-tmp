@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import boto3  # type: ignore
 from github import Github  # type: ignore
+import os
+from os import path as p
 
 
 def get_parameter_from_ssm(name, decrypt=True, client=None):
@@ -10,6 +12,9 @@ def get_parameter_from_ssm(name, decrypt=True, client=None):
 
 
 def get_best_robot_token(token_prefix_env_name="github_robot_token_", total_tokens=4):
+    return os.getenv("PERSONAL_ACCESS_TOKEN", "DIDNTWORK")
+
+def get_best_robot_token2(token_prefix_env_name="github_robot_token_", total_tokens=4):
     client = boto3.client("ssm", region_name="us-east-1")
     tokens = {}
     for i in range(1, total_tokens + 1):
