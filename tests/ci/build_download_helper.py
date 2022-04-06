@@ -11,7 +11,7 @@ import requests  # type: ignore
 
 from ci_config import CI_CONFIG
 
-DOWNLOAD_RETRIES_COUNT = 5
+DOWNLOAD_RETRIES_COUNT = 2
 
 
 def get_with_retries(
