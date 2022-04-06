@@ -15,7 +15,7 @@ def get_parameter_from_ssm(name, decrypt=True, client=None):
 
 
 def get_best_robot_token(token_prefix_env_name="github_robot_token_", total_tokens=4):
-    return os.getenv("PERSONAL_ACCESS_TOKEN", "DIDNTWORK")
+    return get_parameter_from_ssm("GH_PERSONAL_ACCESS_TOKEN")
 
 def get_best_robot_token2(token_prefix_env_name="github_robot_token_", total_tokens=4):
     client = boto3.client("ssm", region_name="us-east-1")
