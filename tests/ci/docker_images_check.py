@@ -405,6 +405,7 @@ def main():
     else:
         pr_info.fetch_changed_files()
 
+
     changed_images = get_changed_docker_images(pr_info, images_dict)
     if changed_images:
         logging.info(
