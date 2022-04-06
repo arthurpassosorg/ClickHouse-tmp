@@ -27,6 +27,7 @@ TEMP_PATH = os.path.join(RUNNER_TEMP, "docker_images_check")
 
 ImagesDict = Dict[str, dict]
 
+
 class DockerImage:
     def __init__(
         self,
