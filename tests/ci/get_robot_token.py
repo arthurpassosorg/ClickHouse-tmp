@@ -8,7 +8,9 @@ from os import path as p
 def get_parameter_from_ssm(name, decrypt=True, client=None):
     if not client:
         client = boto3.client("ssm", region_name="us-east-1")
-    return client.get_parameter(Name=name, WithDecryption=decrypt)["Parameter"]["Value"]
+    response = client.get_parameter(Name=name, WithDecryption=decrypt)
+    print("Boto3 response: ${response}")
+    return response["Parameter"]["Value"]
 
 
 def get_best_robot_token(token_prefix_env_name="github_robot_token_", total_tokens=4):
