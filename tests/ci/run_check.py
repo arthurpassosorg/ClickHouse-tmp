@@ -78,7 +78,8 @@ TRUSTED_CONTRIBUTORS = {
         "zlobober",  # Developer of YT
         "ilejn",  # Arenadata, responsible for Kerberized Kafka
         "thomoco",  # ClickHouse
-        "BoloniniD",  # Seasoned contributor, HSE
+        "BoloniniD",  # Seasoned contributor, HSE,
+        "arthurpassos" # Altinity
     ]
 }
 
