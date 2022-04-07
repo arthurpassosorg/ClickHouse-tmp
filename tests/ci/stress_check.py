@@ -29,8 +29,9 @@ from tee_popen import TeePopen
 def get_run_command(
     build_path, result_folder, repo_tests_path, server_log_folder, image
 ):
+
     cmd = (
-        "docker run --cap-add=SYS_PTRACE "
+        "docker run --cap-add=SYS_PTRACE  "
         "-e S3_URL='https://clickhouse-datasets.s3.amazonaws.com' "
         f"--volume={build_path}:/package_folder "
         f"--volume={result_folder}:/test_output "
