@@ -21,6 +21,7 @@ from clickhouse_helper import (
     mark_flaky_tests,
     prepare_tests_results_for_clickhouse,
 )
+
 from stopwatch import Stopwatch
 from rerun_helper import RerunHelper
 from tee_popen import TeePopen
