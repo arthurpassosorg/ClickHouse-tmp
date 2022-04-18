@@ -189,14 +189,14 @@ CI_CONFIG = {
     "builds_report_config": {
         "ClickHouse build check (actions)": [
             "package_release",
-            "performance",
-            "package_aarch64",
-            "package_asan",
-            "package_ubsan",
-            "package_tsan",
-            "package_msan",
-            "package_debug",
-            "binary_release",
+#             "performance",
+#             "package_aarch64",
+#             "package_asan",
+#             "package_ubsan",
+#             "package_tsan",
+#             "package_msan",
+#             "package_debug",
+#             "binary_release",
         ],
         "ClickHouse special build check (actions)": [
             "binary_tidy",
