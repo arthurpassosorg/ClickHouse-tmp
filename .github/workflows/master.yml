@@ -2966,14 +2966,14 @@ jobs:
   FinishCheck:
     needs:
       - DockerHubPush
-      - BuilderReport
-      - FunctionalStatelessTestRelease
-#      - FunctionalStatelessTestReleaseDatabaseOrdinary
-      - FunctionalStatefulTestRelease
-#      - FunctionalStatefulTestReleaseDatabaseOrdinary
-#      - FunctionalStatelessTestReleaseS3
-#      - IntegrationTestsRelease0
-#      - IntegrationTestsRelease1
+      - BuilderReport # needs work
+      - FunctionalStatelessTestRelease # needs work
+#      - FunctionalStatelessTestReleaseDatabaseOrdinary # needs work
+      - FunctionalStatefulTestRelease # needs work
+#      - FunctionalStatefulTestReleaseDatabaseOrdinary # needs work
+#      - FunctionalStatelessTestReleaseS3 # already passing
+#      - IntegrationTestsRelease0 # already passing
+#      - IntegrationTestsRelease1 # already passing
       - CompatibilityCheck
     runs-on: [self-hosted, style-checker]
     steps:
